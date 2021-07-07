@@ -56,7 +56,7 @@ declare -r script_name=$(basename "$0")
 declare -r aws_cli=$(which aws)
 declare -r wp_cli=`which wp`
 
-[ -z "$wp_cli" ] && { echo "wp-cli is not found in $PATH. Exiting."; exit 1 }
+[ -z "$wp_cli" ] && { echo "wp-cli is not found in $PATH. Exiting."; exit 1; }
 
 let AUTODELETEAFTER--
 
